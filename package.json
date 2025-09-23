@@ -1,0 +1,80 @@
+{
+  "name": "lumilog",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "A modern, TypeScript-friendly logging library for Node.js, browsers, and CLI apps. Provides styled console messages, timers, assertions, and enhanced logging utilities for developers.",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "bin": {
+    "lumilog": "./dist/cli.js"
+  },
+  "scripts": {
+    "prepublishOnly": "pnpm clean && pnpm lint && pnpm check-types && pnpm build",
+    "release": "npm publish --access public",
+    "test": "vitest",
+    "check-types": "tsc --noEmit",
+    "lint": "ulint . --max-warnings 0",
+    "clean": "rm -rf dist",
+    "build": "pnpm vite build",
+    "dev": "pnpm vite build -w",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "lumilog",
+    "console",
+    "shell",
+    "browser",
+    "terminal",
+    "log",
+    "url",
+    "cli",
+    "typescript",
+    "react",
+    "next",
+    "node",
+    "javascript",
+    "typescript",
+    "logger",
+    "debug",
+    "utils",
+    "tooling",
+    "developer-tools",
+    "command-line",
+    "monitoring",
+    "output",
+    "messages",
+    "alerts",
+    "errors",
+    "warnings",
+    "success",
+    "tracking",
+    "performance"
+  ],
+  "author": {
+    "name": "Estarlin R",
+    "email": "dev@estarlincito.com",
+    "url": "https://estarlincito.com"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/estarlincito/lumilog#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estarlincito/lumilog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/estarlincito/lumilog/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "doglob": "^0.0.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4",
+    "ulint": "^0.0.4",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
