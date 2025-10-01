@@ -11,6 +11,7 @@ export { groupCollapsed } from './core/groupcollapsed.js';
 export { groupEnd } from './core/groupend.js';
 export { info } from './core/info.js';
 export { log } from './core/log.js';
+export { pretty } from './core/pretty.js';
 export { profile } from './core/profile.js';
 export { profileEnd } from './core/profileend.js';
 export { success } from './core/success.js';

@@ -38,13 +38,24 @@ yarn add lumilog
 ### API \</>
 
 ```typescript
-import { log, warn, error, success, info, table, count, time } from 'lumilog';
+import {
+  log,
+  warn,
+  error,
+  success,
+  pretty,
+  info,
+  table,
+  count,
+  time,
+} from 'lumilog';
 
 // Basic logs
 log('Hello world');
 warn('Be careful!');
 error('Something went wrong');
 success('Task completed');
+pretty({ name: 'Ana', age: 35 });
 
 // Timers and counters
 time('process');
