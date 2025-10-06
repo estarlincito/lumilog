@@ -20,5 +20,6 @@ export { time } from './core/time.js';
 export { timeEnd } from './core/timeend.js';
 export { timeLog } from './core/timelog.js';
 export { timeStamp } from './core/timestamp.js';
+export { tip } from './core/tip.js';
 export { trace } from './core/trace.js';
 export { warn } from './core/warn.js';
